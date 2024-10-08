@@ -1,0 +1,93 @@
+#header{
+    background-color: rgba(0, 255, 255, 0.751);
+.boxes{
+    width: 95%;
+    margin: auto;
+    .logo{
+        width: 14%;
+        // border: 1px solid red;
+        img{
+            width: 100%;
+        }
+    }
+    ul{
+        list-style: none;
+        width: 86%;
+        // border: 1px solid black ;
+        justify-content: flex-end;
+        li{
+            a{
+                text-decoration: none;
+                padding: 24px 15px;
+                display: inline-block;
+                font-family: "Roboto", sans-serif;
+                font-weight: 500;
+                color: white;
+            }
+            &:nth-child(2){
+                position: relative;
+                &:hover{
+                    ul{
+                        opacity: 1;
+                        transform: translateY(0);
+                        visibility: visible;
+                    }
+                    
+                }
+                ul{ 
+                    transition: 1s;
+                    transform: translateY(20px);
+                    opacity: 0;
+                    visibility: hidden;
+                    position: absolute;
+                    background-color: grey;
+                    width: 200px;
+                    border-radius: 5px;
+                    li{
+                        a{
+                            padding: 10px 15px;
+                        }
+                    }
+                }
+            }
+            &:nth-child(9){
+                a{
+                    transform: rotate(260deg);
+                }
+            }
+            &:nth-child(10){
+                a{
+                    padding: 15px 25px;
+                    border: 1px solid grey;
+                    border-radius: 8mm;
+                    transition: 0.4s;
+                    &:hover{
+                        background-color: crimson;
+                    }
+                }
+            }
+        }
+        .shop-zero{
+            position: relative;
+            // border: 1px solid black;
+            span{
+                position: absolute;
+                background-color: crimson;
+                right: 1px;
+                top: 12px;
+                padding: 2px 6px;
+                border-radius: 50%;
+                color: white;
+                font-size: 11px;
+                font-family: "Roboto", sans-serif;
+                font-weight: 700;
+            }
+        }
+    }
+}
+
+}
+
+
+
+

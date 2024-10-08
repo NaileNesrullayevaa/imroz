@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+.d-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+#header {
+  background-color: rgba(0, 255, 255, 0.751);
+}
+#header .boxes {
+  width: 95%;
+  margin: auto;
+}
+#header .boxes .logo {
+  width: 14%;
+}
+#header .boxes .logo img {
+  width: 100%;
+}
+#header .boxes ul {
+  list-style: none;
+  width: 86%;
+  justify-content: flex-end;
+}
+#header .boxes ul li a {
+  text-decoration: none;
+  padding: 24px 15px;
+  display: inline-block;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  color: white;
+}
+#header .boxes ul li:nth-child(2) {
+  position: relative;
+}
+#header .boxes ul li:nth-child(2):hover ul {
+  opacity: 1;
+  transform: translateY(0);
+  visibility: visible;
+}
+#header .boxes ul li:nth-child(2) ul {
+  transition: 1s;
+  transform: translateY(20px);
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  background-color: grey;
+  width: 200px;
+  border-radius: 5px;
+}
+#header .boxes ul li:nth-child(2) ul li a {
+  padding: 10px 15px;
+}
+#header .boxes ul li:nth-child(9) a {
+  transform: rotate(260deg);
+}
+#header .boxes ul li:nth-child(10) a {
+  padding: 15px 25px;
+  border: 1px solid grey;
+  border-radius: 8mm;
+  transition: 0.4s;
+}
+#header .boxes ul li:nth-child(10) a:hover {
+  background-color: crimson;
+}
+#header .boxes ul .shop-zero {
+  position: relative;
+}
+#header .boxes ul .shop-zero span {
+  position: absolute;
+  background-color: crimson;
+  right: 1px;
+  top: 12px;
+  padding: 2px 6px;
+  border-radius: 50%;
+  color: white;
+  font-size: 11px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+}/*# sourceMappingURL=style.css.map */
